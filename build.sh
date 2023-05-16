@@ -8,10 +8,6 @@ EXTRA_REPOS=($(jq -r "[(.all.include | (.all, select(.\"$IMAGE_NAME\" != null).\
 	(select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".include | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[])] \
 	| sort | unique[]" /tmp/repos.json))
 
-REMOVED_REPOS=($(jq -r "[(.all.exclude | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[]), \
-	(select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".exclude | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[])] \
-	| sort | unique[]" /tmp/repos.json))
-
 INCLUDED_PACKAGES=($(jq -r "[(all.include | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[]), \
 	(select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".include | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[])] \
 	| sort | unique[]" /tmp/packages.json))
@@ -19,7 +15,6 @@ INCLUDED_PACKAGES=($(jq -r "[(all.include | (.all, select(.\"$IMAGE_NAME\" != nu
 EXCLUDED_PACKAGES=($(jq -r "[(.all.exclude | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[]), \
                              (select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".exclude | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[])] \
                              | sort | unique[]" /tmp/packages.json))
-
 
 if [[ "${#EXCLUDED_PACKAGES[@]}" -gt 0 ]]; then
     EXCLUDED_PACKAGES=($(rpm -qa --queryformat='%{NAME} ' ${EXCLUDED_PACKAGES[@]}))
@@ -34,23 +29,11 @@ echo "---"
 
 echo "-- Repositories Management --"
 
-if [[ "${#EXTRA_REPOS[@]}" -gt 0 && "${#REMOVED_REPOS[@]}" -eq 0 ]]; then
+if [[ "${#EXTRA_REPOS[@]}" -gt 0 ]]; then
     wget -P /etc/yum.repos.d/ \
         ${EXTRA_REPOS[@]}
-
-elif [[ "${#EXTRA_REPOS[@]}" -eq 0 && "${#REMOVED_REPOS[@]}" -gt 0 ]]; then
-    rm -f /etc/yum.repos.d/\
-        ${REMOVED_REPOS[@]}
-
-elif [[ "${#EXTRA_REPOS[@]}" -gt 0 && "${#REMOVED_REPOS[@]}" -gt 0 ]]; then
-    rm -f /etc/yum.repos.d\
-        ${REMOVED_REPOS[@]} && \
-        wget -P /etc/yum.repos.d \
-	${EXTRA_REPOS[@]}
-
 else
     echo "No repos to add."
-
 fi
 
 echo "---"
