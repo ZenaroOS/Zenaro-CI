@@ -10,7 +10,7 @@ ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
 
 ADD build.sh /tmp/build.sh
 ADD packages.json /tmp/packages.json
-ADD repos.json /tmp/repos.json
+#ADD repos.json /tmp/repos.json
 
 #COPY --from=ghrc.io/sapryweninera/config:latest /rpms /tmp/rpms
 

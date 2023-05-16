@@ -4,9 +4,6 @@ set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
 
-EXTRA_REPOS=($(jq -r "[(.all.include | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[]), \
-                             (select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".include | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[])] \
-                             | sort | unique[]" /tmp/packages.json))
 INCLUDED_PACKAGES=($(jq -r "[(.all.include | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[]), \
                              (select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".include | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[])] \
                              | sort | unique[]" /tmp/packages.json))
@@ -28,12 +25,12 @@ echo "---"
 
 echo "-- Repositories Management --"
 
-if [[ "${#EXTRA_REPOS[@]}" -gt 0 ]]; then
-    wget -P /etc/yum.repos.d/ \
-        ${EXTRA_REPOS[@]}
-else
-    echo "No repos to add."
+if [[ $IMAGE_NAME == "hypersthene" ]]; then
+	wget -P /etc/yum.repos.d/ \
+		https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-${RELEASE}/solopasha-hyprland-fedora-${RELEASE}.repo
 fi
+wget -P /etcyum.repos.d/ \
+	https://cli.github.com/packages/rpm/gh-cli.repo
 
 echo "---"
 
