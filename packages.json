@@ -30,7 +30,7 @@
 				"openrgb-udev-rules",
 				"openssl",
 				"podman-compose",
-				"pipewire-codec-apx",
+				"pipewire-codec-aptx",
 				"rust",
 				"rustfmt",
 				"smartmontools",
