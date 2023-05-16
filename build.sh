@@ -33,7 +33,7 @@ if [[ $IMAGE_NAME == "hypersthene" ]]; then
 	wget -P /etc/yum.repos.d/ \
 		https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-${RELEASE}/solopasha-hyprland-fedora-${RELEASE}.repo
 fi
-wget -P /etcyum.repos.d/ \
+wget -P /etc/yum.repos.d/ \
 	https://cli.github.com/packages/rpm/gh-cli.repo
 
 echo "---"
