@@ -1,0 +1,147 @@
+{
+	"all": {
+	    "include": {
+		"all": [
+		    "android-tools",
+		    "apr",
+		    "apr-util",
+		    "autojump",
+		    "cargo",
+		    "distrobox",
+		    "ffmpeg",
+		    "ffmpeg-libs",
+		    "fzf",
+		    "gh",
+		    "heimdall",
+		    "htop",
+		    "igt-gpu-tools",
+		    "intel-media-driver",
+		    "intel-mediasdk",
+		    "just",
+                    "kernel-devel-matched",
+		    "libratbag-ratbagd",
+		    "libva-intel-driver",
+		    "libva-utils",
+		    "lz4",
+		    "mesa-va-drivers-freeworld",
+		    "neofetch",
+		    "neovim",
+		    "nvtop",
+		    "openrgb-udev-rules",
+		    "openssl",
+		    "podman-compose",
+		    "pipewire-codec-apx",
+		    "rust",
+		    "rustfmt",
+		    "smartmontools",
+		    "tmux",
+		    "zstd"
+		],
+		"gahnite": [
+		    "ffmpegthumbnailer",
+		    "gnome-tweaks",
+		    "gnome-console",
+		    "pop-shell"
+		],
+		"hypersthene": [
+			"dex-autostart",
+			"dolphin",
+			"ffmpegthumbs",
+			"hyprland",
+			"light",
+			"kdegraphics-thumbnailers",
+			"kitty",
+			"kvantum",
+			"qt5ct",
+			"qt6ct",
+			"rofi-wayland",
+			"sddm",
+			"waybar",
+			"wlogout",
+			"wlr-randr",
+			"xdg-desktop-portal-hyprland",
+			"xdg-user-dirs"
+		],
+		"kinoite": [],
+		"sphene": [
+			"dex-autostart",
+			"dmenu",
+			"dolphin",
+			"ffmpegthumbs",
+			"i3",
+			"kdegraphics-thumbnailers",
+			"kitty",
+			"kvantum",
+			"polybar",
+			"qt5ct",
+			"wlr-randr",
+			"xdg-desktop-portal-kde",
+			"xrandr",
+			"wlogout"
+		]
+	        },
+		"exclude": {
+		    "all": [
+			"firefox",
+			"firefox-langpacks",
+			"libavcodec-free",
+			"libavdevice-free",
+			"libavfilter-free",
+			"libavformat-free",
+			"libavutil-free",
+			"libpostproc-free",
+			"libswresample-free",
+			"libswscale-free",
+			"mesa-va-drivers",
+			"nano"
+		    ],
+		    "gahnite": [],
+		    "hypersthene": [],
+		    "kinoite": [],
+		    "sphene": [
+			   "foot",
+			   "foot-term",
+			   "Thunar",
+			   "thunar-archive-plugin",
+			   "xdg-desktop-portal-gtk"
+		    ]
+		}
+	}
+	"38": {
+	    "include": {
+		    "all": [],
+		    "gahnite": [],
+		    "hypersthene": [
+			    "f38-backgrounds-base",
+			    "f38-backgrounds-extras-base"
+		    ],
+		    "kinoite": [],
+		    "sphene": [
+			    "f38-backgrounds-extras-base"
+		    ]
+		},
+	    "exclude": {
+		    "all": [],
+		    "gahnite": [],
+		    "hypersthene": [],
+		    "kinoite": [],
+		    "sphene": []
+		}
+	},
+	"rawhide": {
+		"include": {
+			"all": [],
+			"gahnite": [],
+			"hypersthene": [],
+			"kinoite": [],
+			"sphene": []
+		}
+		"exclude": {
+			"all": [],
+			"gahnite": [],
+			"hypersthene": [],
+			"kinoite": [],
+			"sphene": []
+		}
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"all": {
+		"include": {
+			"all": [
+				"https://cli.github.com/packages/rpm/gh-cli.repo"
+			],
+			"gahnite": [],
+			"hypersthene": [],
+			"kinoite": [],
+			"sphene": []
+		}
+		"exclude": {
+			"all": [],
+			"gahnite": [],
+			"hypersthene": [],
+			"kinoite": [],
+			"sphene": []
+		}
+	}
+	"38": {
+		"include": {
+			"all": [],,
+			"gahnite": [],
+			"hypersthene": [
+				"https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-38/solopasha-hyprland-fedora-38.repo"
+			],
+			"kinoite": [],
+			"sphene": []
+		}
+		"exclude": {
+			"all": [],
+			"gahnite" [],
+			"hypersthene": [],
+			"kinoite": [],
+			"sphene": []
+		}
+	}
+	"rawhide": {
+		"include": {
+			"all": [],
+			"gahnite": [],
+			"hypersthene": [
+				"https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-rawhide/solopasha-hyprland-fedora-rawhide.repo"
+			],
+			"kinoite": [],
+			"sphene": []
+		}
+		"exclude": {
+			"all": [],
+			"gahnite": [],
+			"hypersthene": [],
+			"kinoite": [],
+			"sphene": []
+		}
+	}
+}
