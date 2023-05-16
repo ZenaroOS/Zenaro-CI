@@ -93,7 +93,8 @@
 				"libswresample-free",
 				"libswscale-free",
 				"mesa-va-drivers",
-				"nano"
+				"nano",
+				"nano-default-editor"
 			],
 			"gahnite": [],
 			"hypersthene": [],
