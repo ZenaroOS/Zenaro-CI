@@ -106,7 +106,7 @@
 				"xdg-desktop-portal-gtk"
 			]
 		}
-	}
+	},
 	"38": {
 		"include": {
 			"all": [],
@@ -128,14 +128,14 @@
 			"sphene": []
 		}
 	},
-	"rawhide": {
+	"39": {
 		"include": {
 			"all": [],
 			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
 			"sphene": []
-		}
+		},
 		"exclude": {
 			"all": [],
 			"gahnite": [],
