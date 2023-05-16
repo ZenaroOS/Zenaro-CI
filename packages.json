@@ -18,7 +18,6 @@
 				"intel-media-driver",
 				"intel-mediasdk",
 				"just",
-				"kernel-devel-matched",
 				"libratbag-ratbagd",
 				"libva-intel-driver",
 				"libva-utils",
@@ -110,7 +109,9 @@
 	},
 	"38": {
 		"include": {
-			"all": [],
+			"all": [
+				"kernel-devel-matched"
+			],
 			"gahnite": [],
 			"hypersthene": [
 				"f38-backgrounds-base",
