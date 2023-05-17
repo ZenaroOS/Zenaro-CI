@@ -149,6 +149,7 @@
 			"kinoite": [],
 			"sphene": [
 				"kf5-filesystem",
+				"kf5-kwindowsystem",
 				"xdg-desktop-portal-kde",
 				"xdg-desktop-portal-wlr"
 			]
