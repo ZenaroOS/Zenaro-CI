@@ -144,7 +144,8 @@
 			"hypersthene": [],
 			"kinoite": [],
 			"sphene": [
-				"kf5-filesystem"
+				"kf5-filesystem",
+				"kf5-kwindowsystem"
 			]
 		}
 	}
