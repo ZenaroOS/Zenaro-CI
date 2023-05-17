@@ -12,7 +12,7 @@ ADD build.sh /tmp/build.sh
 ADD packages.json /tmp/packages.json
 #ADD repos.json /tmp/repos.json
 
-#COPY --from=ghrc.io/sapryweninera/config:latest /rpms /tmp/rpms
+COPY --from=ghrc.io/sapryweninera/config:latest /rpms /tmp/rpms
 
 RUN /tmp/build.sh
 RUN rm -rf /tmp/* /var/*
