@@ -8,7 +8,7 @@
 			"hypersthene": [],
 			"kinoite": [],
 			"sphene": []
-		}
+		},
 		"exclude": {
 			"all": [],
 			"gahnite": [],
@@ -16,7 +16,7 @@
 			"kinoite": [],
 			"sphene": []
 		}
-	}
+	},
 	"38": {
 		"include": {
 			"all": [],,
@@ -26,16 +26,16 @@
 			],
 			"kinoite": [],
 			"sphene": []
-		}
+		},
 		"exclude": {
 			"all": [],
-			"gahnite" [],
+			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
 			"sphene": []
 		}
-	}
-	"rawhide": {
+	},
+	"39": {
 		"include": {
 			"all": [],
 			"gahnite": [],
@@ -44,7 +44,7 @@
 			],
 			"kinoite": [],
 			"sphene": []
-		}
+		},
 		"exclude": {
 			"all": [],
 			"gahnite": [],
