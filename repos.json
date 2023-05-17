@@ -43,7 +43,9 @@
 				"https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-rawhide/solopasha-hyprland-fedora-rawhide.repo"
 			],
 			"kinoite": [],
-			"sphene": []
+			"sphene": [
+				"https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-rawhide/solopasha-hyprland-fedora-rawhide.repo"
+			]
 		},
 		"exclude": {
 			"all": [],
