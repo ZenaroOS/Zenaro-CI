@@ -148,7 +148,7 @@
 			"hypersthene": [],
 			"kinoite": [],
 			"sphene": [
-				"kf5-filesystem",:
+				"kf5-filesystem",
 				"xdg-desktop-portal-kde",
 				"xdg-desktop-portal-wlr"
 			]
