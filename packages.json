@@ -65,14 +65,9 @@
 			"sphene": [
 				"dex-autostart",
 				"dmenu",
-				"dolphin",
-				"ffmpegthumbs",
 				"i3",
-				"kdegraphics-thumbnailers",
 				"kitty",
-				"kvantum",
 				"polybar",
-				"qt5ct",
 				"wlr-randr",
 				"xrandr",
 				"wlogout"
@@ -117,7 +112,12 @@
 			],
 			"kinoite": [],
 			"sphene": [
+				"dolphin",
+				"ffmpegthumbs",
+				"kdegraphics-thumbnailers",
+				"kvantum",
 				"f38-backgrounds-extras-base",
+				"qt5ct",
 				"xdg-desktop-portal-kde"
 			]
 		},
@@ -138,6 +138,8 @@
 			"hypersthene": [],
 			"kinoite": [],
 			"sphene": [
+				"ffmpegthumbaniler",
+				"nautilus",
 				"xdg-desktop-portal-hyprland",
 				"xdg-desktop-portal-gtk"
 			]
