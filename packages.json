@@ -143,7 +143,9 @@
 			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
-			"sphene": []
+			"sphene": [
+				"kf5-filesystem"
+			]
 		}
 	}
 }
