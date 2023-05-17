@@ -118,8 +118,7 @@
 			"kinoite": [],
 			"sphene": [
 				"f38-backgrounds-extras-base",
-				"xdg-desktop-portal-kde",
-				"xdg-dektop-portal-wlr"
+				"xdg-desktop-portal-kde"
 			]
 		},
 		"exclude": {
