@@ -138,10 +138,9 @@
 			"hypersthene": [],
 			"kinoite": [],
 			"sphene": [
-				"ffmpegthumbaniler",
+				"ffmpegthumbnailer",
 				"nautilus",
-				"xdg-desktop-portal-hyprland",
-				"xdg-desktop-portal-gtk"
+				"xdg-desktop-portal-hyprland"
 			]
 		},
 		"exclude": {
