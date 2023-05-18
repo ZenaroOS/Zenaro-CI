@@ -18,6 +18,7 @@
 				"intel-media-driver",
 				"intel-mediasdk",
 				"just",
+				"kernel-cachyos-bore-lto",
 				"libratbag-ratbagd",
 				"libva-intel-driver",
 				"libva-utils",
@@ -51,6 +52,7 @@
 				"kdegraphics-thumbnailers",
 				"kitty",
 				"kvantum",
+				"polkit-kde",
 				"qt5ct",
 				"qt6ct",
 				"rofi-wayland",
@@ -65,9 +67,16 @@
 			"sphene": [
 				"dex-autostart",
 				"dmenu",
+				"dolphin",
+				"ffmpegthumbs",
 				"i3",
+				"kdegraphics-thumbnailer",
 				"kitty",
+				"kvantum",
 				"polybar",
+				"polkit-kde",
+				"qt5ct",
+				"wlogout",
 				"wlr-randr",
 				"xrandr",
 				"wlogout"
@@ -77,6 +86,12 @@
 			"all": [
 				"firefox",
 				"firefox-langpacks",
+				"kernel",
+				"kernel-core",
+				"kernel-modules",
+				"kernel-modules-core",
+				"kernel-modules-extra",
+				"kernel-headers",
 				"libavcodec-free",
 				"libavdevice-free",
 				"libavfilter-free",
@@ -95,16 +110,17 @@
 			"sphene": [
 				"foot",
 				"foot-term",
+				"lxqt-policykit",
+				"liblxqt",
 				"Thunar",
-				"thunar-archive-plugin"
+				"thunar-archive-plugin",
+				"xdg-desktop-portal-gtk"
 			]
 		}
 	},
 	"38": {
 		"include": {
-			"all": [
-				"kernel-devel-matched"
-			],
+			"all": [],
 			"gahnite": [],
 			"hypersthene": [
 				"f38-backgrounds-base",
@@ -112,13 +128,7 @@
 			],
 			"kinoite": [],
 			"sphene": [
-				"dolphin",
-				"ffmpegthumbs",
-				"kdegraphics-thumbnailers",
-				"kvantum",
-				"f38-backgrounds-extras-base",
-				"qt5ct",
-				"xdg-desktop-portal-kde"
+				"f38-backgrounds-extras-base"
 			]
 		},
 		"exclude": {
@@ -126,9 +136,7 @@
 			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
-			"sphene": [
-				"xdg-desktop-portal-gtk"
-			]
+			"sphene": []
 		}
 	},
 	"rawhide": {
@@ -137,11 +145,7 @@
 			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
-			"sphene": [
-				"ffmpegthumbnailer",
-				"nautilus",
-				"xdg-desktop-portal-hyprland"
-			]
+			"sphene": []
 		},
 		"exclude": {
 			"all": [],
