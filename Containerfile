@@ -17,6 +17,6 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 COPY scripts /tmp/scripts
 
 RUN /tmp/build.sh
-RUN rm -rf /tmp/* /var/*
+RUN rm -rf /tmp/* /var/* /boot/*
 RUN ostree container commit
 RUN mkdir -p /var/tmp && chmod -R 177 /var/tmp
