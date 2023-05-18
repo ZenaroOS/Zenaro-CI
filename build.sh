@@ -52,8 +52,6 @@ rpm-ostree install \
 echo "---"
 
 echo " -- Packages Management --"
-setenforce Permissive
-
 if [[ "${#INCLUDED_PACKAGES[@]}" -gt 0 && "${#EXCLUDED_PACKAGES[@]}" -eq 0 ]]; then
     rpm-ostree install \
         ${INCLUDED_PACKAGES[@]}
