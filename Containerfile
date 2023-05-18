@@ -11,6 +11,10 @@ ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
 ADD build.sh /tmp/build.sh
 ADD packages.json /tmp/packages.json
 ADD repos.json /tmp/repos.json
+ADD scripts.yml /tmp/scripts.yml
+
+COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
+COPY scripts /tmp/scripts
 
 RUN /tmp/build.sh
 RUN rm -rf /tmp/* /var/*
