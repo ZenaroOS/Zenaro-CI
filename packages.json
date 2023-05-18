@@ -34,6 +34,8 @@
 				"rustfmt",
 				"smartmontools",
 				"tmux",
+				"waydroid",
+				"waydroid-selinux",
 				"zstd"
 			],
 			"gahnite": [
