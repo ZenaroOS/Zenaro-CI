@@ -52,6 +52,7 @@ rpm-ostree install \
 echo "---"
 
 echo " -- Packages Management --"
+sentenforce Permissive
 
 if [[ "${#INCLUDED_PACKAGES[@]}" -gt 0 && "${#EXCLUDED_PACKAGES[@]}" -eq 0 ]]; then
     rpm-ostree install \
@@ -70,5 +71,7 @@ else
     echo "No packages to install."
 
 fi
+
+setsebool -P domain_kernel_load_modules on
 
 echo "---"
