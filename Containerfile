@@ -13,13 +13,10 @@ ADD packages.json /tmp/packages.json
 ADD repos.json /tmp/repos.json
 ADD scripts.yml /tmp/scripts.yml
 
-RUN setenforce Permissive
-
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 COPY scripts /tmp/scripts
 
 RUN /tmp/build.sh
-RUN setenforce Enforcing
 RUN rm -rf /tmp/* /var/* /boot/*
 RUN ostree container commit
 RUN mkdir -p /var/tmp && chmod -R 177 /var/tmp
