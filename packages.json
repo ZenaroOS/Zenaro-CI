@@ -79,7 +79,8 @@
 				"wlogout",
 				"wlr-randr",
 				"xrandr",
-				"wlogout"
+				"wlogout",
+				"xdg-desktop-portal-kde"
 			]
 		},
 		"exclude": {
