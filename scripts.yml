@@ -1,3 +1,4 @@
 # Place filename of scripts on scripts/ that should be run
 scripts:
   - starship_install.sh
+  - chezmoi_install.sh
