@@ -34,8 +34,6 @@
 				"rustfmt",
 				"smartmontools",
 				"tmux",
-				"waydroid",
-				"waydroid-selinux",
 				"zstd"
 			],
 			"gahnite": [
@@ -102,7 +100,9 @@
 				"nano",
 				"nano-default-editor"
 			],
-			"gahnite": [],
+			"gahnite": [
+				"gnome-terminal"
+			],
 			"hypersthene": [],
 			"kinoite": [],
 			"sphene": [
