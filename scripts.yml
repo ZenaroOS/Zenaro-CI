@@ -1,4 +1,5 @@
 # Place filename of scripts on scripts/ that should be run
 scripts:
-  - starship_install.sh
+  - appimaged_setup.sh
   - chezmoi_install.sh
+  - starship_install.sh
