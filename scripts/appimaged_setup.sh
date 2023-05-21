@@ -1,7 +1,7 @@
 #! /bin/sh
 RELEASE=711
 
-sudo tee <<EOF
+sudo tee /etc/systemd/system/appimaged.service <<EOF
 [Unit]
 Description=AppImage system integration daemon
 After=syslog.target network.target
