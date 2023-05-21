@@ -16,6 +16,7 @@ ADD scripts.yml /tmp/scripts.yml
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 COPY --from=ghcr.io/ublue-os/config:latest /rpms /tmp/rpms
 COPY scripts /tmp/scripts
+COPY usr /usr
 
 RUN /tmp/build.sh
 RUN rm -rf /tmp/* /var/* /boot/*
