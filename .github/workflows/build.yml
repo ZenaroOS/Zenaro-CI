@@ -1,4 +1,4 @@
-name: build-oci
+name: ostree-containers-build
 on:
   pull_request:
     branches:
