@@ -103,7 +103,8 @@
 				"nano-default-editor"
 			],
 			"gahnite": [
-				"gnome-terminal"
+				"gnome-terminal",
+				"gnome-terminal-nautilus"
 			],
 			"hypersthene": [],
 			"kinoite": [],
