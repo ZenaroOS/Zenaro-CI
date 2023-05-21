@@ -46,21 +46,29 @@ With this you can check the container without using on the host machine via rpm-
 On the terminal run:
 
 **Gahnite ( Gnome Spin )**
-
+  
+```
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/gahnite-devel:latest
-
+```
+ 
 **Hypersthene ( Hyperland Spin )**
 
+```
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/hypersthene-devel:latest
-
+```
+  
 **Kinoite ( KDE Spin )**
-
+  
+```
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/kinoite-devel:latest
-
+```
+  
 **Sphene ( Sway Spin )**
-
+  
+```
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/sphene-devel:latest
-
+```
+  
 ***Replace the latest tag with the version or date desired***
 
 ## Special Thanks
