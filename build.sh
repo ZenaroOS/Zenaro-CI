@@ -70,6 +70,4 @@ else
 
 fi
 
-setsebool -P domain_kernel_load_modules on
-
 echo "---"
