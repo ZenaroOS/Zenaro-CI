@@ -12,6 +12,7 @@
 				"ffmpeg-libs",
 				"fzf",
 				"gh",
+				"goverlay",
 				"heimdall",
 				"htop",
 				"igt-gpu-tools",
@@ -22,6 +23,7 @@
 				"libva-intel-driver",
 				"libva-utils",
 				"lz4",
+				"mangohud",
 				"mesa-va-drivers-freeworld",
 				"mpv",
 				"neofetch",
@@ -35,6 +37,10 @@
 				"rustfmt",
 				"smartmontools",
 				"tmux",
+				"vulkan-tools",
+				"vkbasalt",
+				"wine",
+				"winetricks",
 				"zstd"
 			],
 			"gahnite": [
@@ -143,7 +149,9 @@
 	},
 	"rawhide": {
 		"include": {
-			"all": [],
+			"all": [
+				"mesa-filesystem"
+			],
 			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
