@@ -39,8 +39,6 @@
 				"tmux",
 				"vulkan-tools",
 				"vkBasalt",
-				"wine",
-				"winetricks",
 				"zstd"
 			],
 			"gahnite": [
