@@ -24,7 +24,6 @@
 				"libva-utils",
 				"lz4",
 				"mangohud",
-				"mesa-va-drivers-freeworld",
 				"mpv",
 				"neofetch",
 				"neovim",
@@ -102,7 +101,6 @@
 				"libpostproc-free",
 				"libswresample-free",
 				"libswscale-free",
-				"mesa-va-drivers",
 				"nano",
 				"nano-default-editor"
 			],
@@ -126,7 +124,9 @@
 	},
 	"38": {
 		"include": {
-			"all": [],
+			"all": [
+				"mesa-va-drivers-freeworld"
+			],
 			"gahnite": [],
 			"hypersthene": [
 				"f38-backgrounds-base",
@@ -138,7 +138,9 @@
 			]
 		},
 		"exclude": {
-			"all": [],
+			"all": [
+				"mesa-va-drivers"
+			],
 			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
