@@ -4,8 +4,7 @@ set -ouex pipefail
 
 RELEASE=711
 
-systemctl enable rpm-ostred-automatic.timer
-systemctl enable appimaged.service
+systemctl enable rpm-ostreed-automatic.timer
 systemctl enable flatpak-system-update.timer
 
 systemctl --global enable flatpak-user-update.timer
