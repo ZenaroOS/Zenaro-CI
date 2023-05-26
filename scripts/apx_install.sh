@@ -14,6 +14,6 @@ rm /tmp/apx/distrobox/install
 
 cp /tmp/customs/distrobox.sh /tmp/apx/distrobox/install
 
-make install DESTDIR="" PREFIX=usr
+make install DESTDIR="" PREFIX=/usr
 
-make install-manpages DESTDIR="" PREFIX=usr
+make install-manpages DESTDIR="" PREFIX=/usr
