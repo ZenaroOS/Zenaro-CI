@@ -12,6 +12,7 @@
 				"ffmpeg-libs",
 				"fzf",
 				"gh",
+				"goverlay",
 				"heimdall",
 				"htop",
 				"igt-gpu-tools",
@@ -22,7 +23,7 @@
 				"libva-intel-driver",
 				"libva-utils",
 				"lz4",
-				"mesa-va-drivers-freeworld",
+				"mangohud",
 				"mpv",
 				"neofetch",
 				"neovim",
@@ -35,6 +36,8 @@
 				"rustfmt",
 				"smartmontools",
 				"tmux",
+				"vulkan-tools",
+				"vkBasalt",
 				"zstd"
 			],
 			"gahnite": [
@@ -98,7 +101,6 @@
 				"libpostproc-free",
 				"libswresample-free",
 				"libswscale-free",
-				"mesa-va-drivers",
 				"nano",
 				"nano-default-editor"
 			],
@@ -122,7 +124,9 @@
 	},
 	"38": {
 		"include": {
-			"all": [],
+			"all": [
+				"mesa-va-drivers-freeworld"
+			],
 			"gahnite": [],
 			"hypersthene": [
 				"f38-backgrounds-base",
@@ -134,7 +138,9 @@
 			]
 		},
 		"exclude": {
-			"all": [],
+			"all": [
+				"mesa-va-drivers"
+			],
 			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
@@ -143,7 +149,9 @@
 	},
 	"rawhide": {
 		"include": {
-			"all": [],
+			"all": [
+				"mesa-filesystem"
+			],
 			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
