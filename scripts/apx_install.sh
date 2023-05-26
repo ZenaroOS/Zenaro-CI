@@ -1,13 +1,19 @@
+#!/bin/sh
+
+set -ouex pipefail
+
 cd /tmp
 
 git clone --recursive https://github.com/Vanilla-OS/apx.git
 
 cd apx
 
-rpm-ostree install go
+GOCACHE=/tmp/cache/go-build GOENV=/tmp/config/go/env GOMODCACHE=/tmp/go/pkg/mod GOPATH=/tmp/go make build
 
-make build
+rm /tmp/apx/distrobox/install
 
-make install PREFIX=usr
+cp /tmp/customs/distrobox.sh /tmp/apx/distrobox/install
 
-make install-manpages PREFIX=usr
+make install DESTDIR="" PREFIX=/usr
+
+make install-manpages DESTDIR="" PREFIX=/usr

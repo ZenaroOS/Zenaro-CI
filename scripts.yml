@@ -4,3 +4,4 @@ scripts:
   - starship_install.sh
 
 finalinstall:
+  - apx_install.sh
