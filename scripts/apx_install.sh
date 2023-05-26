@@ -1,5 +1,7 @@
 cd /tmp
 
+export PATH=$PATH:/usr/lib/golang/bin
+
 git clone --recursive https://github.com/Vanilla-OS/apx.git
 
 cd apx
