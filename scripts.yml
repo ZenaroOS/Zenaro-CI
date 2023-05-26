@@ -3,4 +3,5 @@ scripts:
   - chezmoi_install.sh
   - starship_install.sh
 
-post-install:
+finalinstall:
+  - apx_install.sh
