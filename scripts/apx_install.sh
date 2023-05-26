@@ -4,6 +4,8 @@ git clone --recursive https://github.com/Vanilla-OS/apx.git
 
 cd apx
 
+rpm-ostree install go
+
 make build
 
 make install PREFIX=usr
