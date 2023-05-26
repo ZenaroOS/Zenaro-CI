@@ -7,6 +7,7 @@ FROM ${BASE_IMAGE}:${FEDORA_MAJOR_VERSION} AS builder
 
 ARG IMAGE_NAME="${IMAGE_NAME}"
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
+ARG GOCACHE=/tmp/cache/go-build
 
 ADD build.sh /tmp/build.sh
 ADD packages.json /tmp/packages.json
