@@ -24,7 +24,7 @@
 - Distrobox, neovim, starship and chezmoi installed  by default
 - Access to a immutable hyprland variant
 - Flatpak and rpm-ostree autoupdate, thanks [ublue team](https://github.com/ublue-os/config)
-- Native integration with appimages with [appimaged](https://github.com/probonopd/go-appimage)
+- Native integration with appimages with [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)
 - Added tiling functionality to all DEs
 
 ## Tips and tricks
