@@ -2,10 +2,7 @@
 
 set -ouex pipefail
 
-export GOCACHE="/tmp/.cache/go-build"
-export GOENV="/tmp/config/go/env"
-#export GOPATH="/tmp/go"
-#export GOMODCACHE="${GOPATH}/pkg/mod"
+export HOME=/tmp 
 
 cd /tmp
 
