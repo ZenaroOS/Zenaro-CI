@@ -8,7 +8,7 @@ git clone --recursive https://github.com/Vanilla-OS/apx.git
 
 cd apx
 
-GOCACHE=/tmp/cache/go-build make build
+GOCACHE=/tmp/cache/go-build GOENV=/tmp/config/go/env GOMODCACHE=/tmp/go/pkg/mod GOPATH=/tmp/go make build
 
 make install PREFIX=usr
 
