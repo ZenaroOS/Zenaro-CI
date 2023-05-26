@@ -2,8 +2,8 @@
 
 set -ouex pipefail
 
-ln -sf /usr/bin/go /usr/lib/golang/bin/go
-ln -sf /usr/bin/gofmt /usr/lib/golang/bin/gofmt
+ln -sf /usr/lib/golang/bin/go /usr/bin/go
+ln -sf /usr/lib/golang/bin/gofmt /usr/bin/gofmt
 
 SCRIPTS=$(echo -e "$(yq '.finalinstall[]' < /tmp/scripts.yml)")
 
