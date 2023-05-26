@@ -6,6 +6,6 @@ cd apx
 
 make build
 
-make install
+make install PREFIX=usr
 
-make install-manpages
+make install-manpages PREFIX=usr
