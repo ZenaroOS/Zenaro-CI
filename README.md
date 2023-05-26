@@ -51,7 +51,7 @@ On the terminal run:
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/gahnite-devel:latest
 ```
  
-**Hypersthene ( Hyperland Spin )**
+**Hypersthene ( Hyprland Spin )**
 
 ```
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/hypersthene-devel:latest
