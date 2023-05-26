@@ -18,4 +18,6 @@ systemctl enable flatpak-system-update.timer
 
 systemctl --global enable flatpak-user-update.timer
 
+mkdir /var/usrlocal /var/usrlocal/share
+cp /usr/share/*sessions /var/usrlocal/share
 cp /usr/share/ublue-os/update-services/etc/rpm-ostreed.conf /etc/rpm-ostreed.conf

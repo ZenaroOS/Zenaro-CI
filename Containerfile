@@ -21,10 +21,6 @@ COPY customs /tmp/customs
 
 RUN /tmp/build.sh
 RUN /tmp/post-build.sh
-
-RUN cp -f /usr/share/wayland-sessions /usr/local/share/wayland-sessions
-RUN cp -f /usr/share/xsessions /usr/local/share/xsessions
-
 RUN rm -rf /tmp/* /var/* /boot/* /usr/share/xsessions/* /usr/share/wayland-sessions/*
 RUN ostree container commit
 RUN mkdir -p /var/tmp && chmod -R 177 /var/tmp
