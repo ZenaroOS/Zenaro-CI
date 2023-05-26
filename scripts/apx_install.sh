@@ -2,9 +2,11 @@
 
 set -ouex pipefail
 
-export HOME=/tmp 
+export GOCACHE="/tmp/cache/go-build" 
 
 cd /tmp
+
+mkdir /tmp/cache
 
 ln -sf /usr/lib/golang/bin/go /usr/bin/go
 
