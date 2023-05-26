@@ -19,8 +19,7 @@ COPY --from=ghcr.io/ublue-os/config:latest /rpms /tmp/rpms
 COPY scripts /tmp/scripts
 
 RUN /tmp/build.sh
-RUN mkdir /root/.cache
 RUN /tmp/post-build.sh
-RUN rm -rf /tmp/* /var/* /boot/* /root/*
+RUN rm -rf /tmp/* /var/* /boot/*
 RUN ostree container commit
 RUN mkdir -p /var/tmp && chmod -R 177 /var/tmp
