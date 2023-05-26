@@ -15,4 +15,7 @@ systemctl enable flatpak-system-update.timer
 
 systemctl --global enable flatpak-user-update.timer
 
+ln -sf /usr/bin/go /usr/lib/golang/bin/go
+ln -sf /usr/bin/gofmt /usr/lib/golang/bin/gofmt
+
 cp /usr/share/ublue-os/update-services/etc/rpm-ostreed.conf /etc/rpm-ostreed.conf
