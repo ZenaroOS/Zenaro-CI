@@ -6,7 +6,7 @@ export HOME=/tmp
 
 cd /tmp
 
-export PATH=$PATH:/usr/lib/golang/bin
+ln -sf /usr/lib/golang/bin/go /usr/bin/go
 
 git clone --recursive https://github.com/Vanilla-OS/apx.git
 
