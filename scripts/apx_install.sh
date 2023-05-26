@@ -10,10 +10,10 @@ git clone --recursive https://github.com/Vanilla-OS/apx.git
 
 cd apx
 
-rm root
+#rm /root
 
-mkdir /root
-mkdir /root/.cache
+#mkdir /root
+#mkdir /root/.cache
 
 sudo make build
 
