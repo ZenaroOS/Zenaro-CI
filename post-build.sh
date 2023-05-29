@@ -20,4 +20,10 @@ systemctl --global enable flatpak-user-update.timer
 
 mkdir /usr/etc /usr/etc/sessions.d
 mv /usr/share/*sessions /usr/etc/sessions.d
+
+if [[ $IMAGE_NAME == "hypersthene" || $IMAGE_NAME == "sphene" ]]; then
+	sed -i '171s/kitty-open.desktop;//' /usr/share/applications/mimeinfo.cache
+	sed  -i '12s+inode/directory;++' /usr/share/applications/kitty-open.desktop
+fi
+
 cp /usr/share/ublue-os/update-services/etc/rpm-ostreed.conf /etc/rpm-ostreed.conf
