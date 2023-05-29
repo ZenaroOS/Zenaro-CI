@@ -84,14 +84,14 @@
 				"kvantum",
 				"materia-kde-sddm",
 				"polkit-kde",
-				"qt6ct",
+				"qt5ct",
 				"sddm-themes",
 				"wdisplays",
 				"wf-recorder",
 				"wlogout",
 				"wlr-randr",
 				"wlogout",
-				"xdg-desktop-portal-hyprland"
+				"xdg-desktop-portal-kde"
 			]
 		},
 		"exclude": {
@@ -113,7 +113,9 @@
 				"gnome-terminal",
 				"gnome-terminal-nautilus"
 			],
-			"hypersthene": [],
+			"hypersthene": [
+				"xdg-desktop-portal-gtk"
+			],
 			"kinoite": [],
 			"sphene": [
 				"foot",
@@ -139,7 +141,8 @@
 			],
 			"kinoite": [],
 			"sphene": [
-				"f38-backgrounds-extras-base"
+				"f38-backgrounds-extras-base",
+				"qt6ct"
 			]
 		},
 		"exclude": {
@@ -160,14 +163,18 @@
 			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
-			"sphene": []
+			"sphene": [
+				"xdg-desktop-portal-hyprland"
+			]
 		},
 		"exclude": {
 			"all": [],
 			"gahnite": [],
 			"hypersthene": [],
 			"kinoite": [],
-			"sphene": []
+			"sphene": [
+				"xdg-desktop-portal-wlr"
+			]
 		}
 	}
 }
