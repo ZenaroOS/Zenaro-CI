@@ -84,14 +84,14 @@
 				"kvantum",
 				"materia-kde-sddm",
 				"polkit-kde",
-				"qt5ct",
+				"qt6ct",
 				"sddm-themes",
 				"wdisplays",
 				"wf-recorder",
 				"wlogout",
 				"wlr-randr",
 				"wlogout",
-				"xdg-desktop-portal-kde"
+				"xdg-desktop-portal-hyprland"
 			]
 		},
 		"exclude": {
@@ -122,7 +122,8 @@
 				"liblxqt",
 				"sway-config-fedora",
 				"Thunar",
-				"thunar-archive-plugin"
+				"thunar-archive-plugin",
+				"xdg-desktop-portal-gtk"
 			]
 		}
 	},
