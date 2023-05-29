@@ -122,8 +122,7 @@
 				"liblxqt",
 				"sway-config-fedora",
 				"Thunar",
-				"thunar-archive-plugin",
-				"xdg-desktop-portal-gtk"
+				"thunar-archive-plugin"
 			]
 		}
 	},
