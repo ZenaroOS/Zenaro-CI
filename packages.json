@@ -84,7 +84,7 @@
 				"kvantum",
 				"materia-kde-sddm",
 				"polkit-kde",
-				"qt6ct",
+				"qt5ct",
 				"sddm-themes",
 				"wdisplays",
 				"wf-recorder",
@@ -113,7 +113,9 @@
 				"gnome-terminal",
 				"gnome-terminal-nautilus"
 			],
-			"hypersthene": [],
+			"hypersthene": [
+				"xdg-desktop-portal-gtk"
+			],
 			"kinoite": [],
 			"sphene": [
 				"foot",
@@ -123,7 +125,8 @@
 				"sway-config-fedora",
 				"Thunar",
 				"thunar-archive-plugin",
-				"xdg-desktop-portal-gtk"
+				"xdg-desktop-portal-gtk",
+				"xdg-desktop-portal-wlr"
 			]
 		}
 	},
