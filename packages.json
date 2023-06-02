@@ -99,6 +99,7 @@
 		},
 		"exclude": {
 			"all": [
+				"default-editor",
 				"firefox",
 				"firefox-langpacks",
 				"libavcodec-free",
@@ -111,6 +112,10 @@
 				"libswscale-free",
 				"nano",
 				"nano-default-editor"
+				"vim-common",
+				"vim-data",
+				"vim-default-editor",
+				"vim-enhanced"
 			],
 			"gahnite": [
 				"gnome-terminal",
