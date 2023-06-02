@@ -38,6 +38,9 @@
 				"rustfmt",
 				"smartmontools",
 				"tmux",
+				"virt-install",
+				"virt-manager",
+				"virt-viewer",
 				"vulkan-tools",
 				"vkBasalt",
 				"zstd"
