@@ -111,7 +111,7 @@
 				"libswresample-free",
 				"libswscale-free",
 				"nano",
-				"nano-default-editor"
+				"nano-default-editor",
 				"vim-common",
 				"vim-data",
 				"vim-default-editor",
