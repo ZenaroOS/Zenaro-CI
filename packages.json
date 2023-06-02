@@ -38,6 +38,9 @@
 				"rustfmt",
 				"smartmontools",
 				"tmux",
+				"virt-install",
+				"virt-manager",
+				"virt-viewer",
 				"vulkan-tools",
 				"vkBasalt",
 				"zstd"
@@ -96,6 +99,7 @@
 		},
 		"exclude": {
 			"all": [
+				"default-editor",
 				"firefox",
 				"firefox-langpacks",
 				"libavcodec-free",
@@ -107,7 +111,10 @@
 				"libswresample-free",
 				"libswscale-free",
 				"nano",
-				"nano-default-editor"
+				"nano-default-editor",
+				"vim-common",
+				"vim-default-editor",
+				"vim-enhanced"
 			],
 			"gahnite": [
 				"gnome-terminal",
