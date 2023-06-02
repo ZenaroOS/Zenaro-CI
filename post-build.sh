@@ -24,3 +24,4 @@ if [[ $IMAGE_NAME == "hypersthene" || $IMAGE_NAME == "sphene" ]]; then
 fi
 
 cp /usr/share/ublue-os/update-services/etc/rpm-ostreed.conf /etc/rpm-ostreed.conf
+cp /usr/share/ublue-os/just/ublue-os-just.sh /etc/profile.d/
