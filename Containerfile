@@ -20,6 +20,6 @@ COPY scripts /tmp/scripts
 
 RUN /tmp/build.sh
 RUN /tmp/post-build.sh
-RUN rm -rf /tmp/* /var/* /boot/* /usr/share/xsessions/* /usr/share/wayland-sessions/*
+RUN rm -rf /tmp/* /var/* /boot/* 
 RUN ostree container commit
 RUN mkdir -p /var/tmp && chmod -R 177 /var/tmp
