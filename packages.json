@@ -167,18 +167,24 @@
 				"mesa-filesystem"
 			],
 			"gahnite": [],
-			"hypersthene": [],
+			"hypersthene": [
+				"libxcrypt"
+			],
 			"kinoite": [],
 			"sphene": [
+				"libxcrypt",
 				"xdg-desktop-portal-hyprland"
 			]
 		},
 		"exclude": {
 			"all": [],
 			"gahnite": [],
-			"hypersthene": [],
+			"hypersthene": [
+				"libxcrypt"
+			],
 			"kinoite": [],
 			"sphene": [
+				"libxcrypt",
 				"xdg-desktop-portal-wlr"
 			]
 		}
