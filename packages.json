@@ -6,6 +6,8 @@
 				"apr",
 				"apr-util",
 				"autojump",
+				"bluez-obexd",
+				"btop",
 				"cargo",
 				"distrobox",
 				"ffmpeg",
@@ -72,7 +74,8 @@
 				"xdg-user-dirs"
 			],
 			"kinoite": [
-				"bismuth"
+				"bismuth",
+				"materia-kde"
 			],
 			"sphene": [
 				"ark",
