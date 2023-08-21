@@ -5,8 +5,7 @@ set -ouex pipefail
 ln -sf /usr/lib/golang/bin/go /usr/bin/go
 ln -sf /usr/lib/golang/bin/gofmt /usr/bin/gofmt
 
-echo "export LD=gold" > /etc/profile.d/set-env.sh
-chmod +x /etc/profile.d/set-env.sh
+ln -sf /usr/bin/ld.gold /usr/bin/ld
 
 SCRIPTS=$(echo -e "$(yq '.finalinstall[]' < /tmp/scripts.yml)")
 
