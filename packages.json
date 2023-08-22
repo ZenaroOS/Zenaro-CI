@@ -42,6 +42,7 @@
 				"vulkan-tools",
 				"vkBasalt",
 				"xpadneo",
+				"xpadneo-kmod",
 				"zstd"
 			],
 			"gahnite": [
