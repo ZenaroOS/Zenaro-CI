@@ -34,16 +34,15 @@
 			"sphene": []
 		}
 	},
-	"rawhide": {
+	"39": {
 		"include": {
 			"all": [
-				"https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-rawhide/bieszczaders-kernel-cachyos-fedora-rawhide.repo"
+				"https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-39/bieszczaders-kernel-cachyos-fedora-39.repo",
+				"https://copr.fedorainfracloud.org/coprs/atim/xpadneo/repo/fedora-39/atim-xpadneo-fedora-39.repo"
 			],
 			"gahnite": [],
 			"kinoite": [],
-			"sphene": [
-				"https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-rawhide/solopasha-hyprland-fedora-rawhide.repo"
-			]
+			"sphene": []
 		},
 		"exclude": {
 			"all": [],
