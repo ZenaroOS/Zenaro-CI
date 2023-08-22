@@ -31,13 +31,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image_name: [gahnite, hypersthene, kinoite, sphene]
-        major_version: [38, rawhide]
+        image_name: [gahnite, kinoite, sphene]
+        major_version: [38, 39]
         include:
           - major_version: 38
             is_latest_version: true
             is_stable_version: true
-          - major_version: rawhide
+          - major_version: 39
             is_latest_version: true
             is_stable_version: false
     steps: 

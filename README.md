@@ -50,12 +50,6 @@ On the terminal run:
 ```
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/gahnite-devel:latest
 ```
- 
-**Hypersthene ( Hyprland Spin )**
-
-```
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/hypersthene-devel:latest
-```
   
 **Kinoite ( KDE Spin )**
   
@@ -77,8 +71,8 @@ rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/sphene-devel:late
 |:---|:----|:------:
 Fedora Project | Created the distro and rpm-ostree | MIT
 UblueOS team | Showed me how to create and edit Ostree Images | Apache 2.0
-Solopasha | Maintainer of the copr repo used for the hyprland spin | Unknown
-Hyprland Team | For the amazing window manager | BSD-3 Clause
+Atim | Maintainer of xpadneo copr repo | No license
+atar-axis | Developter of the xpadneo driver | GPL 3.0
 
 ***This is a personal project, none that were thanked here endorse or promote this project***
 
