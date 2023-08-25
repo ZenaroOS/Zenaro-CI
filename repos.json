@@ -18,8 +18,7 @@
 	"38": {
 		"include": {
 			"all": [
-				"https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-38/bieszczaders-kernel-cachyos-fedora-38.repo",
-				"https://copr.fedorainfracloud.org/coprs/atim/xpadneo/repo/fedora-38/atim-xpadneo-fedora-38.repo"
+				"https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-38/bieszczaders-kernel-cachyos-fedora-38.repo"
 			],
 			"gahnite": [],
 			"kinoite": [],
@@ -37,8 +36,7 @@
 	"39": {
 		"include": {
 			"all": [
-				"https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-39/bieszczaders-kernel-cachyos-fedora-39.repo",
-				"https://copr.fedorainfracloud.org/coprs/atim/xpadneo/repo/fedora-39/atim-xpadneo-fedora-39.repo"
+				"https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-39/bieszczaders-kernel-cachyos-fedora-39.repo"
 			],
 			"gahnite": [],
 			"kinoite": [],
