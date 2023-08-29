@@ -129,7 +129,7 @@ jobs:
             ${{ steps.generate-tags.outputs.alias_tags }}
           build-args: |
             IMAGE_NAME=${{ matrix.image_name }}
-            SOURCE_IMAGE="${{ env.SOURCE_IMAGE }}-main"
+            SOURCE_IMAGE=${{ env.SOURCE_IMAGE }}-main
             FEDORA_MAJOR_VERSION=${{ matrix.major_version }}
           labels: ${{ steps.meta.outputs.labels }}
           oci: false
