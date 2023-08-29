@@ -49,8 +49,6 @@ jobs:
         run: |
           if [[ "${{ matrix.image_name }}" == "gahnite" ]]; then
               echo "SOURCE_IMAGE=silverblue" >> $GITHUB_ENV
-          elif [[ "${{ matrix.image_name }}" == "hypersthene" ]]; then
-              echo "SOURCE_IMAGE=base" >> $GITHUB_ENV
           elif [[ "${{ matrix.image_name }}" == "sphene" ]]; then
               echo "SOURCE_IMAGE=sericea" >> $GITHUB_ENV
           else
@@ -102,7 +100,7 @@ jobs:
       - name: Get current version
         id: labels
         run: |
-          ver=$(skopeo inspect docker://quay.io/fedora-ostree-desktops/${{ env.SOURCE_IMAGE }}:${{ matrix.major_version }} | jq -r '.Labels["org.opencontainers.image.version"]')
+          ver=$(skopeo inspect docker://ghrc.io/ublue-os/${{ env.SOURCE_IMAGE }}-main:${{ matrix.major_version }} | jq -r '.Labels["org.opencontainers.image.version"]')
           echo "VERSION=$ver" >> $GITHUB_OUTPUT
 
       # Build metadata
@@ -115,7 +113,7 @@ jobs:
           labels: |
             org.opencontainers.image.title=${{ env.IMAGE_NAME }}
             org.opencontainers.image.version=${{ steps.labels.outputs.VERSION }}
-            org.opencontainers.image.description=A Zenaro ${{ env.IMAGE_NAME }} image based of Fedora ${{ env.MAJOR_VERSION }} ${{ env.SOURCE_IMAGE }}
+            org.opencontainers.image.description=A Zenaro ${{ env.IMAGE_NAME }} image based of Ublue-OS ${{ env.MAJOR_VERSION }} ${{ env.SOURCE_IMAGE }}-main
             io.artifacthub.package.readme-url=https://raw.githubusercontent.com/sapryweninera/base/devel/README.md
             io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/97859194?s=400&v=4
 
@@ -131,7 +129,7 @@ jobs:
             ${{ steps.generate-tags.outputs.alias_tags }}
           build-args: |
             IMAGE_NAME=${{ matrix.image_name }}
-            SOURCE_IMAGE=${{ env.SOURCE_IMAGE }}
+            SOURCE_IMAGE=${{ env.SOURCE_IMAGE }}-main
             FEDORA_MAJOR_VERSION=${{ matrix.major_version }}
           labels: ${{ steps.meta.outputs.labels }}
           oci: false

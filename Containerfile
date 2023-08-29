@@ -1,6 +1,6 @@
 ARG IMAGE_NAME="${IMAGE_NAME:-silverblue}"
-ARG SOURCE_IMAGE="$SOURCE_IMAGE:-silverblue}"
-ARG BASE_IMAGE="quay.io/fedora-ostree-desktops/${SOURCE_IMAGE}"
+ARG SOURCE_IMAGE="$SOURCE_IMAGE:-silverblue-main}"
+ARG BASE_IMAGE="ghcr.io/ublue-os/${SOURCE_IMAGE}"
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
 
 FROM ${BASE_IMAGE}:${FEDORA_MAJOR_VERSION} AS builder
@@ -14,8 +14,6 @@ ADD post-build.sh /tmp/post-build.sh
 ADD repos.json /tmp/repos.json
 ADD scripts.yml /tmp/scripts.yml
 
-COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
-COPY --from=ghcr.io/ublue-os/config:latest /rpms /tmp/rpms
 COPY scripts /tmp/scripts
 
 RUN /tmp/build.sh
