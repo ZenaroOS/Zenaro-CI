@@ -71,8 +71,6 @@ rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/sphene-devel:late
 |:---|:----|:------:
 Fedora Project | Created the distro and rpm-ostree | MIT
 UblueOS team | Showed me how to create and edit Ostree Images | Apache 2.0
-Atim | Maintainer of xpadneo copr repo | No license
-atar-axis | Developter of the xpadneo driver | GPL 3.0
 
 ***This is a personal project, none that were thanked here endorse or promote this project***
 
