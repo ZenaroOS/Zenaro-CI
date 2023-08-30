@@ -17,7 +17,7 @@ EXCLUDED_PACKAGES=($(jq -r "[(.all.exclude | (.all, select(.\"$IMAGE_NAME\" != n
                              (select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".exclude | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[])] \
                              | sort | unique[]" /tmp/packages.json))
 
-SCRIPTS=$(echo -e "$(yq '.scripts[]' < /tmp/scripts.yml)")
+SCRIPTS=($(jq -r '.scripts[]' /tmp/scripts.yml))
 
 echo "-- Running scripts from /tmp/scripts.yml"
 for script in $SCRIPTS; do
