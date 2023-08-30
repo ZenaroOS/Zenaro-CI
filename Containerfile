@@ -12,7 +12,7 @@ ADD build.sh /tmp/build.sh
 ADD packages.json /tmp/packages.json
 ADD post-build.sh /tmp/post-build.sh
 ADD repos.json /tmp/repos.json
-ADD scripts.yml /tmp/scripts.yml
+ADD scripts.json /tmp/scripts.json
 
 COPY scripts /tmp/scripts
 
