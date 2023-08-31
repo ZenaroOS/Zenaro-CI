@@ -20,6 +20,7 @@ EXCLUDED_PACKAGES=($(jq -r "[(.all.exclude | (.all, select(.\"$IMAGE_NAME\" != n
 SCRIPTS=($(jq -r '.scripts[]' /tmp/scripts.json))
 
 echo "-- Running scripts from /tmp/scripts.json"
+echo "$(SCRIPTS)"
 for script in $SCRIPTS; do
 	echo "Running ${script}" && \
 	/tmp/scripts/$script; \
