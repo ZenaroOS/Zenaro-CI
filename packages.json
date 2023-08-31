@@ -17,6 +17,7 @@
 				"mpv",
 				"neofetch",
 				"neovim",
+				"vifm",
 				"virt-install",
 				"virt-manager",
 				"virt-viewer",
@@ -25,7 +26,9 @@
 			],
 			"gahnite": [
 				"gnome-console",
-				"pop-shell"
+				"gnome-shell-extension-auto-move-windows",
+				"gnome-shell-extension-blur-my-shell",
+				"gnome-shell-extension-pop-shell"
 			],
 			"kinoite": [
 				"bismuth",
@@ -75,6 +78,12 @@
 				"vim-enhanced"
 			],
 			"gahnite": [
+				"gnome-shell-extension-apps-menu",
+				"gnome-shell-extension-background-logo",
+				"gnome-shell-extension-launch-new-instance",
+				"gnome-shell-extension-placces-menu",
+				"gnome-shell-extension-window-list",
+				"gnome-extensions-app",
 				"gnome-terminal",
 				"gnome-terminal-nautilus"
 			],
