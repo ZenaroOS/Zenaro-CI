@@ -1,7 +1,6 @@
 {
   "scripts": [
     "chezmoi_install.sh",
-    "starship_install.sh",
-    "EOF"
+    "starship_install.sh"
   ]
 }
