@@ -90,7 +90,17 @@
 				"gnome-terminal",
 				"gnome-terminal-nautilus"
 			],
-			"kinoite": [],
+			"kinoite": [
+				"gwenview",
+				"gwenview-libs",
+				"kate",
+				"kate-libs",
+				"kate-plugins",
+				"kcalc",
+				"okular",
+				"okular-libs",
+				"okular-part"
+			],
 			"sphene": [
 				"clipman",
 				"foot",
