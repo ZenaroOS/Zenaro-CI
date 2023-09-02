@@ -31,7 +31,7 @@
 				"neovim",
 				"nvtop",
 				"openrgb-udev-rules",
-				"opnessl",
+				"openssl",
 				"podman-compose",
 				"pipewire-codec-aptx",
 				"smartmontools",
