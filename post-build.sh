@@ -14,3 +14,16 @@ for script in $SCRIPTS; do
 	echo "Running ${script}" && \
 	/tmp/scripts/$script; \
 done
+
+systemctl enable rpm-ostreed-automatic.timer
+systemctl enable flatpak-system-update.timer
+
+systemctl --global enable flatpak-user-update.timer
+
+if IMAGE_NAME == "sphene" ]]; then
+	sed -i '171s/kitty-open.desktop;//' /usr/share/applications/mimeinfo.cache
+	sed  -i '12s+inode/directory;++' /usr/share/applications/kitty-open.desktop
+fi
+
+cp /usr/share/ublue-os/update-services/etc/rpm-ostreed.conf /etc/rpm-ostreed.conf
+cp /usr/share/ublue-os/just/ublue-os-just.sh /etc/profile.d/

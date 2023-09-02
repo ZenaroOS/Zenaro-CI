@@ -3,28 +3,49 @@
 		"include": {
 			"all": [
 				"android-tools",
+				"apr",
+				"apr-util",
 				"autojump",
 				"bluez-obexd",
 				"btop",
+				"distrobox",
+				"ffmpeg",
+				"ffmpeg-libs",
+				"fzf",
 				"gh",
 				"go",
 				"goverlay",
 				"heimdall",
+				"htop",
+				"inntel-media-driver",
 				"intel-mediasdk",
+				"just",
+				"libratbag-ratbagd",
+				"libva-intel-driver",
+				"lib-va-utils",
 				"lz4",
 				"make",
 				"mangohud",
 				"mpv",
 				"neofetch",
 				"neovim",
+				"nvtop",
+				"openrgb-udev-rules",
+				"opnessl",
+				"podman-compose",
+				"pipewire-codec-aptx",
+				"smartmontools",
 				"vifm",
 				"virt-install",
 				"virt-manager",
 				"virt-viewer",
 				"vulkan-tools",
-				"vkBasalt"
+				"vkBasalt",
+				"zstd"
 			],
 			"gahnite": [
+				"ffmpegthumbnailer",
+				"gnome-tweaks",
 				"gnome-console",
 				"gnome-shell-extension-auto-move-windows",
 				"gnome-shell-extension-blur-my-shell",
@@ -35,6 +56,7 @@
 			],
 			"kinoite": [
 				"bismuth",
+				"ksshaskpass",
 				"materia-kde",
 				"materia-kde-sddm"
 			],
@@ -103,13 +125,11 @@
 				"okular-part"
 			],
 			"sphene": [
-				"clipman",
 				"foot",
 				"foot-term",
 				"lxqt-policykit",
 				"liblxqt",
 				"sway-config-fedora",
-				"thumbler",
 				"Thunar",
 				"thunar-archive-plugin"
 			]
