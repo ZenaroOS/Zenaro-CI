@@ -22,7 +22,7 @@
 				"just",
 				"libratbag-ratbagd",
 				"libva-intel-driver",
-				"lib-va-utils",
+				"libva-utils",
 				"lz4",
 				"make",
 				"mangohud",
