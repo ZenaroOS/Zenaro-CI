@@ -15,6 +15,7 @@ ADD repos.json /tmp/repos.json
 ADD scripts.json /tmp/scripts.json
 
 COPY scripts /tmp/scripts
+COPY --from=ghcr.io/ublue-os/config:latest /rpms /tmp/rpms
 
 RUN /tmp/build.sh
 RUN /tmp/post-build.sh
