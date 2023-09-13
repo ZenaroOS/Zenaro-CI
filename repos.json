@@ -18,7 +18,8 @@
 	"38": {
 		"include": {
 			"all": [
-				"https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-38/bieszczaders-kernel-cachyos-fedora-38.repo"
+				"https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-38/bieszczaders-kernel-cachyos-fedora-38.repo",
+				"https://copr.fedorainfracloud.org/coprs/tofik/nushell/repo/fedora-38/tofik-nushell-fedora-38.repo"
 			],
 			"gahnite": [],
 			"kinoite": [],
@@ -36,7 +37,8 @@
 	"39": {
 		"include": {
 			"all": [
-				"https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-39/bieszczaders-kernel-cachyos-fedora-39.repo"
+				"https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-39/bieszczaders-kernel-cachyos-fedora-39.repo",
+				"https://copr.fedorainfracloud.org/coprs/tofik/nushell/repo/fedora-39/tofik-nushell-fedora-39.repo"
 			],
 			"gahnite": [],
 			"kinoite": [],
