@@ -52,8 +52,7 @@
 				"gnome-shell-extension-auto-move-windows",
 				"gnome-shell-extension-blur-my-shell",
 				"gnome-shell-extension-pop-shell",
-				"gnome-shell-extension-gsconnect",
-				"kde-connect"
+				"gnome-shell-extension-gsconnect"
 
 			],
 			"kinoite": [
