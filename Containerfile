@@ -25,7 +25,7 @@ ENV ADDED_REPOS="$(jq -r '[(.all.include | (.all, select(.\'$IMAGE_NAME\' != nul
 ENV REMOVED_REPOS="$(jq -r '[(.all.exclude | (.all, select(.\'$IMAGE_NAME\' != null).\'$IMAGE_NAME\')[]), \
                              (select(.\'$FEDORA_MAJOR_VERSION\' != null).\'$FEDORA_MAJOR_VERSION\'.exclude | (.all, select(.\'$IMAGE_NAME\' != null).\'$IMAGE_NAME\')[])] \
                              | sort | unique[]' /tmp/repos.json)"
-ENV SCRIPTS="$(jq -r '.scripts[]' /tmp/scripts.json)"
+ENV SCRIPTS="($(jq -r '.scripts[]' /tmp/scripts.json))"
 
 RUN /tmp/build/script.sh
 RUN /tmp/add_rpm.sh
