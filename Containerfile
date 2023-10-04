@@ -27,9 +27,10 @@ ENV REMOVED_REPOS="$(jq -r '[(.all.exclude | (.all, select(.\'$IMAGE_NAME\' != n
                              | sort | unique[]' /tmp/repos.json)"
 ENV SCRIPTS="$(jq -r '.scripts[]' /tmp/scripts.json)"
 
-RUN /tmp/build/scripts.sh
+RUN /tmp/build/script.sh
 RUN /tmp/add_rpm.sh
 RUN /tmp/install_rpm.sh
+RUN /tmp/build/repos.sh
 RUN /tmp/build.sh
 RUN /tmp/post-build.sh
 RUN rm -rf /tmp/* /var/* /boot/* 
