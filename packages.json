@@ -113,6 +113,7 @@
 			],
 			"gahnite": [
 				"gnome-classic-session",
+				"gnome-extensions-app",
 				"gnome-shell-extension-apps-menu",
 				"gnome-shell-extension-background-logo",
 				"gnome-shell-extension-launch-new-instance",
