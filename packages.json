@@ -103,7 +103,7 @@
 				"libswresample-free",
 				"libswscale-free",
 				"nano",
-				"nano-default-editor",
+				"nano-default-editor"
 			],
 			"gahnite": [
 				"gnome-classic-session",
