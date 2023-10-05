@@ -17,8 +17,6 @@ ADD scripts.json /tmp/scripts.json
 COPY scripts /tmp/scripts
 COPY --from=ghcr.io/ublue-os/config:latest /rpms /tmp/rpms
 
-ENV RELEASE="$(rpm -E %fedora)"
-
 RUN /tmp/build/script.sh
 RUN /tmp/build/add_rpm.sh
 RUN /tmp/build/install_rpm.sh
