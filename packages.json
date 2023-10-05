@@ -52,8 +52,7 @@
 				"gnome-shell-extension-auto-move-windows",
 				"gnome-shell-extension-blur-my-shell",
 				"gnome-shell-extension-pop-shell",
-				"gnome-shell-extension-gsconnect",
-				"kde-connect"
+				"gnome-shell-extension-gsconnect"
 
 			],
 			"kinoite": [
@@ -93,13 +92,10 @@
 				"firefox-langpacks",
 				"kernel",
 				"kernel-core",
-				"kernel-devel",
-				"kernel-devel-matched",
 				"kernel-modules",
 				"kernel-modules-extra",
 				"kernel-modules-core",
 				"libavcodec-free",
-				"libavdevice-free",
 				"libavfilter-free",
 				"libavformat-free",
 				"libavutil-free",
@@ -107,19 +103,15 @@
 				"libswresample-free",
 				"libswscale-free",
 				"nano",
-				"nano-default-editor",
-				"vim-common",
-				"vim-default-editor",
-				"vim-enhanced"
+				"nano-default-editor"
 			],
 			"gahnite": [
 				"gnome-classic-session",
 				"gnome-shell-extension-apps-menu",
 				"gnome-shell-extension-background-logo",
 				"gnome-shell-extension-launch-new-instance",
-				"gnome-shell-extension-placces-menu",
+				"gnome-shell-extension-places-menu",
 				"gnome-shell-extension-window-list",
-				"gnome-extensions-app",
 				"gnome-terminal",
 				"gnome-terminal-nautilus"
 			],
@@ -133,7 +125,6 @@
 			],
 			"sphene": [
 				"foot",
-				"foot-term",
 				"lxqt-policykit",
 				"liblxqt",
 				"sway-config-fedora",
