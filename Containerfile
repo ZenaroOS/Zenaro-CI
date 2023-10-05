@@ -23,7 +23,7 @@ ENV RELEASE="$(rpm -E %fedora)"
 RUN /tmp/build/script.sh
 RUN /tmp/build/add_rpm.sh
 RUN /tmp/build/install_rpm.sh
-RUN /tmp/build/repos.sh
+RUN /tmp/build/repo.sh
 RUN /tmp/build.sh
 RUN /tmp/post-build.sh
 RUN rm -rf /tmp/* /var/* /boot/* 
