@@ -104,7 +104,6 @@
 				"libswscale-free",
 				"nano",
 				"nano-default-editor",
-				"vim-enhanced"
 			],
 			"gahnite": [
 				"gnome-classic-session",
