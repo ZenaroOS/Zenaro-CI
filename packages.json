@@ -117,8 +117,11 @@
 			],
 			"kinoite": [
 				"gwenview",
+				"gwenview-libs",
 				"kcalc",
-				"okular"
+				"okular",
+				"okular-libs",
+				"okular-part"
 			],
 			"sphene": [
 				"foot",
