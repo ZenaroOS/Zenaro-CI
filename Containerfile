@@ -9,7 +9,6 @@ ARG IMAGE_NAME="${IMAGE_NAME}"
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
 
 ADD build /tmp/build
-ADD build.sh /tmp/build.sh
 ADD packages.json /tmp/packages.json
 ADD post-build.sh /tmp/post-build.sh
 ADD repos.json /tmp/repos.json
