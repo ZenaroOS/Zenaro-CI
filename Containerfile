@@ -12,8 +12,10 @@ ADD build /tmp/build
 ADD packages.json /tmp/packages.json
 ADD post-build.sh /tmp/post-build.sh
 ADD repos.json /tmp/repos.json
+ADD setup /tmp/setup
 ADD scripts.json /tmp/scripts.json
 
+COPY cosign.pub /tmp/setup/zenaro.pub
 COPY scripts /tmp/scripts
 COPY --from=ghcr.io/ublue-os/config:latest /rpms /tmp/rpms
 
