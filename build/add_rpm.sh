@@ -2,7 +2,7 @@
 set -oeux pipefail
 UNSTABLE=39
 
-if [[ $FEDORA_MAJOR_VERSION == $UNSTABLE ]]
+if [[ $FEDORA_MAJOR_VERSION == $UNSTABLE ]]; then
 	FEDORA_MAJOR_VERSION="rawhide"
 fi
 echo "-- Adding EXTRA RPMS --"
