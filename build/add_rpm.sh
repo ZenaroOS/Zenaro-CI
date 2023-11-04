@@ -1,6 +1,10 @@
 #! /bin/sh
 set -oeux pipefail
+UNSTABLE=39
 
+if [[ $FEDORA_MAJOR_VERSION == $UNSTABLE ]]
+	FEDORA_MAJOR_VERSION="rawhide"
+fi
 echo "-- Adding EXTRA RPMS --"
 wget -P /tmp/rpms \
     https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-${FEDORA_MAJOR_VERSION}.noarch.rpm \
