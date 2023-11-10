@@ -116,7 +116,6 @@
 				"gnome-terminal-nautilus"
 			],
 			"kinoite": [
-				"kcalc",
 				"okular",
 				"okular-libs",
 				"okular-part"
@@ -149,6 +148,7 @@
 			],
 			"gahnite": [],
 			"kinoite": [
+				"kcalc",
 				"gwenview",
 				"gwenview-libs"
 			],
