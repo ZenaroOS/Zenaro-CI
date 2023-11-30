@@ -115,7 +115,9 @@
 				"gnome-terminal",
 				"gnome-terminal-nautilus"
 			],
-			"kinoite": [],
+			"kinoite": [
+				"plasma-discover-rpm-ostree"
+			],
 			"sphene": [
 				"foot",
 				"lxqt-policykit",
