@@ -19,7 +19,7 @@
 				"htop",
 				"intel-media-driver",
 				"intel-mediasdk",
-				"kernel-cachyos-rt",
+				"kernel-cachyos",
 				"just",
 				"libratbag-ratbagd",
 				"libva-intel-driver",
