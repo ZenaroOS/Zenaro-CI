@@ -22,7 +22,6 @@
 
 - Stable and Reliable Fedora System
 - Distrobox, neovim, starship and chezmoi installed  by default
-- Access to a immutable hyprland variant
 - Flatpak and rpm-ostree autoupdate, thanks [ublue team](https://github.com/ublue-os/config)
 - Native integration with appimages with [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)
 - Added tiling functionality to all DEs
@@ -37,7 +36,7 @@ If you want to check the image before using it run:
 
 **Podman**
 
-podman run -it ghcr.io/zenarodev/image-name:version bash
+podman run -it ghcr.io/zenaroos/image-name:version bash
 
 With this you can check the container without using on the host machine via rpm-ostree
 
@@ -48,19 +47,19 @@ On the terminal run:
 **Gahnite ( Gnome Spin )**
   
 ```
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/gahnite-devel:latest
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenaroos/gahnite-devel:latest
 ```
   
 **Kinoite ( KDE Spin )**
   
 ```
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/kinoite-devel:latest
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenaroos/kinoite-devel:latest
 ```
   
 **Sphene ( Sway Spin )**
   
 ```
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenarodev/sphene-devel:latest
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/zenaroos/sphene-devel:latest
 ```
   
 ***Replace the latest tag with the version or date desired***
